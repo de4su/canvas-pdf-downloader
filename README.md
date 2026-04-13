@@ -2,6 +2,7 @@
 
 Scan Canvas course pages for PDFs and live-session links, then download PDFs with meaningful filenames.
 
+
 ## Features
 
 - Detects direct file/PDF links on Canvas course pages
@@ -10,7 +11,7 @@ Scan Canvas course pages for PDFs and live-session links, then download PDFs wit
 - Saves files to course folders in `Downloads/OPIT/Course_<id>/...`
 - Avoids duplicate downloads using local history
 - Supports multiple Canvas domains with configurable allowlist
-
+<img src="https://i.imgur.com/7Plhc7I.png">
 ## Install (Chrome or Edge)
 
 1. Open extension management:
