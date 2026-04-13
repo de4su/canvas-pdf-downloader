@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OPIT Control Panel</title>
+    <style>
+      :root { color-scheme: dark; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        background: radial-gradient(circle at top, #1f2937, #0b1220);
+        color: #e5e7eb;
+      }
+      .wrap {
+        max-width: 760px;
+        margin: 24px auto;
+        padding: 0 16px;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 14px;
+        padding: 16px;
+      }
+      h1 { margin: 0 0 6px; font-size: 24px; }
+      .sub { color: #9ca3af; margin-bottom: 14px; }
+      .row { margin: 10px 0; }
+      .actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      button {
+        border: 0;
+        border-radius: 10px;
+        padding: 10px 12px;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      #scanBtn { background: #2563eb; }
+      #downloadBtn { background: #059669; }
+      #exportBtn { background: #7c3aed; }
+      #clearBtn { background: #dc2626; }
+      #aboutBtn { background: #4b5563; }
+      #closeBtn { background: #0ea5e9; }
+      #status {
+        margin-top: 12px;
+        background: rgba(0, 0, 0, 0.35);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 10px;
+        white-space: pre-wrap;
+        min-height: 60px;
+      }
+      .meta {
+        margin-top: 8px;
+        color: #d1d5db;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="card">
+        <h1>OPIT Persistent Control Panel</h1>
+        <div class="sub">This page stays open until you close it.</div>
+
+        <div class="row">
+          <label>
+            <input id="autoDownload" type="checkbox" />
+            Auto-download on page load
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="scanBtn">Scan Current Page</button>
+          <button id="downloadBtn">Download PDFs</button>
+          <button id="exportBtn">Export Scan JSON</button>
+          <button id="clearBtn">Clear History</button>
+          <button id="aboutBtn">About</button>
+          <button id="closeBtn">Close Panel</button>
+        </div>
+
+        <div id="counts" class="meta">PDFs: 0 | Live sessions: 0</div>
+        <div id="status">Ready.</div>
+      </div>
+    </div>
+
+    <script src="panel.js"></script>
+  </body>
+</html>
