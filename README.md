@@ -18,8 +18,6 @@ Scan Canvas course pages for PDFs and live-session links, then download PDFs wit
    - Edge: `edge://extensions`
 2. Enable **Developer mode**
 3. Click **Load unpacked**
-4. Select this folder:
-   - `C:\Users\desu\Desktop\New folder (3)\term 2 only\New folder\opit-pdf-downloader-extension-rebuild`
 
 ## Usage
 
@@ -30,7 +28,7 @@ Scan Canvas course pages for PDFs and live-session links, then download PDFs wit
 5. Click **Download PDFs From Current Page**
 
 ## Notes
-
+- Tested on Open Institute of Technology, so that's by default in the link list. 
 - Popup shows clear error text if scanning cannot run
 - Auto-download can be toggled in popup
 - Double-click the domain list to remove a domain rule
